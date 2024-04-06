@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            border: 2px solid blue;
+            /*display: inline; If you use display inline property it will not work for margin top or padding top but will for rest of them equally.. and if you want to have top padding and margin you can use inline-block*/
+            display: inline-block;
+            width: 343px; /*width also work only in inline-block diplay property*/
+            margin: 20px;
+            padding: 20px;
+        }
+        .box1{
+            /* visibility: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">also a nice box</div>
+    <span>I am a good</span>
+    <span>boy</span>
+</body>
+
+</html>

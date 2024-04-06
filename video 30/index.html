@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color: blue; /*Global Variable can work for evryone unitl the local variable comes*/
+            --bgcolor: aqua;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            list-style: none;
+            padding: 15px;
+        }
+        ul{
+            display: flex;
+        }
+        ul li:first-child{
+            --color: wheat; /*Local varible only for this*/
+            background-color: var(--color);
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        .container{
+            background-color: var(--bgcolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+        </ul>
+    </div>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore impedit molestiae blanditiis pariatur adipisci voluptatum ex vel vitae, expedita velit architecto obcaecati eum laudantium, debitis error perferendis, beatae quae quia optio. Molestiae perferendis eum ea ullam pariatur autem iure esse sequi, quo aliquid exercitationem facere!</div>
+</body>
+</html>

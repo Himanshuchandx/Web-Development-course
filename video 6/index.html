@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form action="post">
+        <label for="first_name">First Name :- </label>
+        <input type="text" id="first_name" placeholder="First Name">
+        <label for="last_name">Last Name :- </label>
+        <input type="text" id="last_name" placeholder="Last Name">
+        <label for="email">Email :- </label>
+        <input type="text" id="email" placeholder="Your Email">
+        <label for="phone_number">Phone Number :- </label>
+        <input type="text" id="phone_number" placeholder="Phone Number">
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+        <label for="comment">Enter your comments here</label>
+        <br>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Write review in 150 characters" maxlength="150"></textarea>
+        <br>
+        <label for="dream_car">Which is your dream car</label>
+        <select name="car" id="dream_car">
+            <option value="G-Wagon">G-Wagon</option>
+            <option value="Rolls-royce">Rolls-royce</option>
+            <option value="Toyota-Supra">Toyota-Supra</option>
+            <option value="Mercedes-GLS-600">Mercedes-GLS-600</option>
+            <option value="Mercedesh Maybach">Mercedesh Maybach</option>
+        </select>
+    </form>
+</body>
+</html>

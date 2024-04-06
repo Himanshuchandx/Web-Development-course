@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box:first-child{
+            background-color: purple;
+        }
+        .box::first-line{
+            color: white;
+        }
+        [data-color="primary-color"]{
+            color: green;
+        }
+        .boxes::before{
+            content:  "Himanshu is a Good Boy";
+        }
+        ::selection{
+            background-color: rgb(255, 182, 182);
+            color: black;
+        }
+        input:placeholder-shown{
+            color: blue;
+            background-color: #443f3f;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary-color" class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, dignissimos tempore rerum unde nam quibusdam aperiam officia incidunt deserunt cum esse deleniti, repellat similique amet enim quos nemo, sed vel? Nam repellendus error magni recusandae ipsum incidunt fugit. Voluptatum, repellat, voluptates quidem recusandae alias vero cumque tempore culpa minus architecto ipsam repudiandae soluta possimus quis aliquam quas, aut rem? Reiciendis, nihil fugiat. Cupiditate eaque cumque totam ipsam accusamus maiores consequatur corporis temporibus eius sint aliquid repellat fugiat rerum fugit tempore atque, placeat esse nostrum doloribus omnis et quidem aliquam obcaecati commodi? Voluptas modi laborum, mollitia similique soluta magnam est cum rem harum ad aspernatur optio tenetur, labore cumque quos, fuga veritatis magni minima neque iusto. Veniam ut dolore quidem, debitis beatae velit architecto recusandae laborum sequi ipsum unde dignissimos aut eaque error magnam vero veniam tempore adipisci iusto enim doloremque.</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <input type="text" placeholder="Enter Your Name Here">
+    </div>
+</body>
+</html>

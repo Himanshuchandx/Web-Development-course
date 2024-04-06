@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .nav {
+            background-color: rgb(171, 107, 255);
+            overflow: hidden;
+            position: fixed;
+            top: 0px;
+            width: 100vw;
+        }
+
+        ul li {
+            float: left;
+            list-style: none;
+            padding: 5px;
+            margin: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        li:hover {
+            color: rgb(206, 186, 186);
+        }
+
+        li:first-child {
+            margin-left: 10px;
+        }
+
+        .box {
+            border: 2px solid black;
+            margin: 5px;
+            width: 28vw;
+            height: 60vh;
+        }
+
+        .box {
+            float: left;
+            margin: 120px;
+            margin-top: 50px;
+        }
+
+        .box1 {
+            background-color: pink;
+        }
+
+        .body {
+            margin: 15px;
+            background: green;
+            height: 80vh;
+            box-sizing: border-box;
+        }
+
+        .box2 {
+            background-color: rgb(98, 98, 255);
+        }
+
+        .btn {
+            color: white;
+            border: 2px solid rgb(214, 209, 209);
+            text-align: center;
+            padding: 30px;
+            font-size: 40px;
+            border-radius: 13px;
+            text-align: center;
+            width: 50vw;
+            justify-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .logo {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            margin-bottom: 0px;
+            margin-right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+        </ul>
+    </div>
+    <div class="body">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+    </div>
+    <div class="btn">Welcome to this Sigma Web Development Express</div>
+    <div class="logo">
+        <img src="logo.png" alt="" width="50px">
+    </div>
+</body>
+
+</html>
